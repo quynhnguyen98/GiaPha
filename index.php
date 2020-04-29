@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD:index.php
     <title>Đây là trang web gia phả</title>
-=======
-    <title>LawnCare - Free Bootstrap 4 Template by Colorlib</title>
-    <title>LawnCare - Free Bootstrap 4 Template by Colorlib</title>
-<<<<<<< HEAD:index.php
->>>>>>> parent of bbdfa4c... thua dong title:index.html
-=======
->>>>>>> parent of bbdfa4c... thua dong title:index.html
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
