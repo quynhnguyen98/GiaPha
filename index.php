@@ -62,8 +62,8 @@
 	      </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav m-auto">
-                    <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.php" class="nav-link">About us</a></li>
+                    <li class="nav-item active"><a href="index.php" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="about.php" class="nav-link">Cây gia phả</a></li>
                     <li class="nav-item"><a href="services.php" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
