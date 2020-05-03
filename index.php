@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>Đây là trang web gia phả</title>
+<title>Website-Gia Phả</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -47,7 +47,7 @@
                 <div class="col-md-6 ftco-animate">
                     <h2 class="subheading">Gia Phả Họ Nguyễn</h2>
                     <h1>Giới Thiệu </h1>
-                    <p class="mb-4"></p>
+                    <p class="mb-4">Nhớ về nguồn, Họ Tộc Nguyễn Đức là con cháu của triều Nguyễn từ phướng Bắc tiến vào Nam...</p>
                     <p><a href="services.php" class="btn btn-primary mr-md-4 py-2 px-4">Xem Thêm <span
                                 class="ion-ios-arrow-forward"></span></a></p>
                 </div>
