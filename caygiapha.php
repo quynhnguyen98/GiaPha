@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>LawnCare - Free Bootstrap 4 Template by Colorlib</title>
+  <title>Đây là trang web gia phả</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -42,8 +42,8 @@
     <div class="container">
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
-          <h1 class="mb-3 bread">About Us</h1>
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+          <h1 class="mb-3 bread">Cây Gia Phả</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Trang Chủ<i class="ion-ios-arrow-forward"></i></a></span> <span>Cây Gia Phả<i class="ion-ios-arrow-forward"></i></span></p>
         </div>
       </div>
     </div>
