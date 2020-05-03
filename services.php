@@ -48,112 +48,51 @@
     </section>
    	
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-lg-3 py-5 order-md-last">
-	          <div class="heading-section ftco-animate">
-	          	<span class="subheading">Services</span>
-	            <h2 class="mb-4">Lawn Services</h2>
-	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your.</p>
-	            <p><a href="#" class="btn btn-primary py-3 px-4">Get a Quote</a></p>
-	          </div>
-    			</div>
-    			<div class="col-lg-9 services-wrap px-4 pt-5">
-    				<div class="row pt-md-3">
-    					<div class="col-md-4 d-flex align-items-stretch">
-		    				<div class="services text-center">
-		    					<div class="icon d-flex justify-content-center align-items-center">
-		    						<span class="flaticon-fence"></span>
-		    					</div>
-		    					<div class="text">
-		    						<h3>Garden Care</h3>
-		    						<p>Seeking justice in the world is a sed significant emotional and investment when we follow this call.</p>
-		    					</div>
-		    					<a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></a>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 d-flex align-items-stretch">
-		    				<div class="services text-center">
-		    					<div class="icon d-flex justify-content-center align-items-center">
-		    						<span class="flaticon-lawn-mower"></span>
-		    					</div>
-		    					<div class="text">
-		    						<h3>Lawn mowing</h3>
-		    						<p>Seeking justice in the world is a sed significant emotional and investment when we follow this call.</p>
-		    					</div>
-		    					<a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></a>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 d-flex align-items-stretch">
-		    				<div class="services text-center">
-		    					<div class="icon d-flex justify-content-center align-items-center">
-		    						<span class="flaticon-natural-resources"></span>
-		    					</div>
-		    					<div class="text">
-		    						<h3>Lawn care</h3>
-		    						<p>Seeking justice in the world is a sed significant emotional and investment when we follow this call.</p>
-		    					</div>
-		    					<a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span class="ion-ios-arrow-round-forward"></span></a>
-		    				</div>
-		    			</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+    	
     </section>
 
     <section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section ftco-animate">
-          	<span class="subheading">Tips &amp; Techniques</span>
-            <h2 class="mb-4">Seasonal Lawn Care Tips</h2>
+          	
+            <h2 class="mb-4">LỜI CHÂN LỘ</h2>
+			<span class="subheading">Đường về làng Nguyễn Anh Anh </span>
+			<span class="subheading">Từ đường Nguyễn Đức quan minh tuyệt vời </span>
           </div>
         </div>
         <div class="row">
         	<div class="col-md-12">
-        		<div class="carousel-seasonal owl-carousel ftco-owl">
               <div class="item">
               	<div class="wrap">
-			        		<div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url(images/seasonal-1.jpg);">
+			        		<div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url(images/gioithieu.jpg);"style="height:30px;width:30px">
 			        		</div>
-			        		<div class="text text-center px-4">
-		        				<h3><a href="#">Spring</a></h3>
-		        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		        			</div>
-		        		</div>
-              </div>
-              <div class="item">
-              	<div class="wrap">
-			        		<div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url(images/seasonal-2.jpg);">
-			        		</div>
-			        		<div class="text text-center px-4">
-		        				<h3><a href="#">Summer</a></h3>
-		        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		        			</div>
-		        		</div>
-              </div>
-              <div class="item">
-              	<div class="wrap">
-			        		<div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url(images/seasonal-3.jpg);">
-			        		</div>
-			        		<div class="text text-center px-4">
-		        				<h3><a href="#">Winter</a></h3>
-		        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-		        			</div>
-		        		</div>
-              </div>
-              <div class="item">
-              	<div class="wrap">
-			        		<div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url(images/seasonal-4.jpg);">
-			        		</div>
-			        		<div class="text text-center px-4">
-		        				<h3><a href="#">Fall</a></h3>
-		        				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+			        		<div class="vanban">
+		        				<p>&emsp;&emsp;Nhớ về nguồn, Họ Tộc Nguyễn Đức là con cháu của triều Nguyễn từ phướng Bắc tiến vào Nam.
+<h5>Tiền Hiền Thủy Tổ anh: NGUYỄN HOẰNG ĐẠI
+<br>
+Thủy Tổ em:	NGUYỄN HOẰNG PHÚ</h5>
+&emsp;&emsp;Là nhị vị tướng soái theo chúa Nguyễn vào Nam trấn thủ trấn Quảng Nam, di dân lập nghiệp, kinh tế văn hóa phồn vinh, cư dân trăm họ an cư ấm nó hạnh phúc.
+<br>
+&emsp;&emsp;Họ Nguyễn chúng ta cũng đã lượt qua nhiều giai đoạn đổi thay Nguyễn Hoằng, Nguyễn Văn, Nguyễn Phước rồi Nguyễn Đức.
+<br>
+&emsp;&emsp;Hai Ông Thủy Tổ về định cư ở huyện Mộc Hóa này là làng Thi Phổ huyện Mộ Đức – xóm Xuân Viên trên bốn trăm năm.
+<br>
+&emsp;&emsp;Ngày giổ Thủy Tổ Nguyễn Đức cùng ngày giổ tổ Hùng Vương mùng 10 tháng 3 (Âm Lịch) hằng năm. Truyền thống đạo đức là nếp sống văn hóa cổ đại của người Việt Nam, trong gia đình có sự tôn kính Ông Bà, Cha Mẹ, cung phung hiếu thảo, tốt đời đẹp đạo, uống nước nhớ nguồn. Là con người có Ông Bà, Cha Mẹ, mới có mình, vì thế ta không thể thờ ơ quên lãng Tổ Tiên sẽ phạm tội mất gốc là điều bất hạnh nhất của con người.<br>
+&emsp;&emsp;Vô thường bể dâu, dù trong hoàn cảnh lịch sử thế nào họ Nguyễn Đức làng Thi Phổ vẫn tồn tại phát triển, đến hôm nay được 16 đời con cháu.<br>
+&emsp;&emsp;Nhờ ơn Thủy Tổ NGUYỄN HOẰNG ĐẠI<br>
+&emsp;&emsp;Có công khai tạo Xuân Viên Phước Điền với tinh thần trách nhiệm tôn kính Tổ Tiên.<br>
+&emsp;&emsp;Tôi biên soạn gia phả họ Nguyễn Đức đời thứ 8 để làm tư liệu cho con cháu Nội và Ngoại.<br>
+&emsp;&emsp;Mong con cháu góp phần công đức báo ân ngủ đại đồng đường.<br>
+<br>
+<h4>Thi Phổ, Xuân Đinh Hợi</h4><br>
+</p>
 		        			</div>
 		        		</div>
               </div>
             </div>
+
+
         	</div>
         </div>
     	</div>

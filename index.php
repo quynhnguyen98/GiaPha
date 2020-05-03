@@ -38,17 +38,17 @@
     </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');"
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/hinhnen.jpg');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
                 data-scrollax-parent="true">
                 <div class="col-md-6 ftco-animate">
-                    <h2 class="subheading">Welcome to Lawn care</h2>
-                    <h1>Lawn care for everyone </h1>
-                    <p class="mb-4">Let us work on your yard</p>
-                    <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Learn more <span
+                    <h2 class="subheading">Gia Phả Họ Nguyễn</h2>
+                    <h1>Giới Thiệu </h1>
+                    <p class="mb-4"></p>
+                    <p><a href="services.php" class="btn btn-primary mr-md-4 py-2 px-4">Xem Thêm <span
                                 class="ion-ios-arrow-forward"></span></a></p>
                 </div>
             </div>
@@ -75,42 +75,14 @@
                                     <span class="flaticon-fence"></span>
                                 </div>
                                 <div class="text">
-                                    <h3>Garden Care</h3>
-                                    <p>Seeking justice in the world is a sed significant emotional and investment when
-                                        we follow this call.</p>
+                                    <h3></h3>
+                                    <p></p>
                                 </div>
                                 <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
                                         class="ion-ios-arrow-round-forward"></span></a>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex align-items-stretch">
-                            <div class="services text-center">
-                                <div class="icon d-flex justify-content-center align-items-center">
-                                    <span class="flaticon-lawn-mower"></span>
-                                </div>
-                                <div class="text">
-                                    <h3>Lawn mowing</h3>
-                                    <p>Seeking justice in the world is a sed significant emotional and investment when
-                                        we follow this call.</p>
-                                </div>
-                                <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
-                                        class="ion-ios-arrow-round-forward"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-stretch">
-                            <div class="services text-center">
-                                <div class="icon d-flex justify-content-center align-items-center">
-                                    <span class="flaticon-natural-resources"></span>
-                                </div>
-                                <div class="text">
-                                    <h3>Lawn care</h3>
-                                    <p>Seeking justice in the world is a sed significant emotional and investment when
-                                        we follow this call.</p>
-                                </div>
-                                <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
-                                        class="ion-ios-arrow-round-forward"></span></a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
