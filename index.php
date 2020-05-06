@@ -1,3 +1,9 @@
+<?php 
+     include "config.php";
+     $data=$connect->query('select * from sukien');
+     
+     $result=$data->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +54,7 @@
                     <h2 class="subheading">Gia Phả Họ Nguyễn</h2>
                     <h1>Giới Thiệu </h1>
                     <p class="mb-4"></p>
-                    <p><a href="services.php" class="btn btn-primary mr-md-4 py-2 px-4">Xem Thêm <span
+                    <p><a href="gioithieu.php" class="btn btn-primary mr-md-4 py-2 px-4">Xem Thêm <span
                                 class="ion-ios-arrow-forward"></span></a></p>
                 </div>
             </div>
@@ -56,7 +62,7 @@
     </div>
 
     <section class="ftco-section ftco-no-pt">
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-3 py-5 order-md-last">
                     <div class="heading-section ftco-animate">
@@ -86,7 +92,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
@@ -94,7 +100,7 @@
             <div class="row d-flex">
                 <div class="col-md-6 d-flex">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
-                        style="background-image:url(images/about.jpg);">
+                        style="background-image:url(images/gp.jpg);">
                         <a href="https://vimeo.com/45830194"
                             class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                             <span class="icon-play"></span>
@@ -104,28 +110,20 @@
                 <div class="col-md-6 pl-md-5">
                     <div class="row justify-content-start py-5">
                         <div class="col-md-12 heading-section ftco-animate">
-                            <span class="subheading">Welcome to Lawn Care</span>
-                            <h2 class="mb-4">Welcome to Lawn Care Company</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                            <span class="subheading">Gia Phả Họ Nguyễn</span>
+                            <h2 class="mb-4">Thông tin mới</h2>
+                            <p>Gia phả là nơi để theo dõi sự hình thành của dòng họ, hãy cập nhật tin tức hằng ngày !!
                             </p>
                             <div class="services-wrap">
-                                <a href="#" class="services-list">Gutter cleaning
+                                <a href="#ng" class="services-list">Nguồn góc Gia Phả họ Nguyễn
                                     <div class="btn-custom d-flex align-items-center justify-content-center"><span
                                             class="ion-ios-arrow-round-forward"></span></div>
                                 </a>
-                                <a href="#" class="services-list">Organinc fertilization and weed control
+                                <a href="lichdo/lich.php" class="services-list">Lịch Các ngày dỗ trong năm
                                     <div class="btn-custom d-flex align-items-center justify-content-center"><span
                                             class="ion-ios-arrow-round-forward"></span></div>
                                 </a>
-                                <a href="#" class="services-list">Compost top dressing &amp; compost tea application
-                                    <div class="btn-custom d-flex align-items-center justify-content-center"><span
-                                            class="ion-ios-arrow-round-forward"></span></div>
-                                </a>
-                                <a href="#" class="services-list">New lawn installation
-                                    <div class="btn-custom d-flex align-items-center justify-content-center"><span
-                                            class="ion-ios-arrow-round-forward"></span></div>
-                                </a>
-                                <a href="#" class="services-list">Mulch and other services available
+                                <a href="#sk" class="services-list">Sự kiện đám dỗ
                                     <div class="btn-custom d-flex align-items-center justify-content-center"><span
                                             class="ion-ios-arrow-round-forward"></span></div>
                                 </a>
@@ -141,61 +139,33 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-10 text-center heading-section ftco-animate">
-                    <span class="subheading">Tips &amp; Techniques</span>
-                    <h2 class="mb-4">Seasonal Lawn Care Tips</h2>
+                    <span class="subheading" id="sk">Hình Ảnh &amp; Sự Kiện</span>
+                    <h2 class="mb-4">Sự kiện và các hình ảnh lưu niệm</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="carousel-seasonal owl-carousel ftco-owl">
+<!-- -------------------------------------------------------------------------------------------------------- -->
+<?php
+        foreach ($result as $k => $v) {
+        ?>
                         <div class="item">
                             <div class="wrap">
                                 <div class="seasonal img d-flex align-items-center justify-content-center"
-                                    style="background-image: url(images/seasonal-1.jpg);">
+                                    style="background-image: url(images/<?php echo $v['hinhanh'] ?>);">
                                 </div>
                                 <div class="text text-center px-4">
-                                    <h3><a href="#">Spring</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts.</p>
+                                    <h3><a href="#"><?php echo $v['ngaydo'] ?></a></h3>
+                                    <p><?php echo $v['noidung_sukien'] ?></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="wrap">
-                                <div class="seasonal img d-flex align-items-center justify-content-center"
-                                    style="background-image: url(images/seasonal-2.jpg);">
-                                </div>
-                                <div class="text text-center px-4">
-                                    <h3><a href="#">Summer</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="wrap">
-                                <div class="seasonal img d-flex align-items-center justify-content-center"
-                                    style="background-image: url(images/seasonal-3.jpg);">
-                                </div>
-                                <div class="text text-center px-4">
-                                    <h3><a href="#">Winter</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="wrap">
-                                <div class="seasonal img d-flex align-items-center justify-content-center"
-                                    style="background-image: url(images/seasonal-4.jpg);">
-                                </div>
-                                <div class="text text-center px-4">
-                                    <h3><a href="#">Fall</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+        }
+        ?>
+ <!-- -------------------------------------------------------------------------------------------------------- -->
+
                     </div>
                 </div>
             </div>
@@ -222,88 +192,38 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading">Testimonial</span>
-                    <h2 class="mb-4">Happy Clients</h2>
+                    <span class="subheading" id="ng">Nguồn Góc</span>
+                    <h2 class="mb-4">Nguồn Góc nhà họ Nguyễn</h2>
                 </div>
             </div>
             <div class="row ftco-animate">
                 <div class="col-md-12">
                     <div class="carousel-testimony owl-carousel ftco-owl">
+<!-- -------------------------------------------------------------------------------------------------------- -->
+<?php
+$data_dongho=$connect->query('select * from dongho limit 0,4');
+$kq=$data_dongho->fetchAll();
+        foreach ($kq as $k => $v) {
+        ?>
                         <div class="item">
                             <div class="testimony-wrap py-4">
                                 <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="mb-4"><?php echo $v['tieusu'] ?></p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="user-img" style="background-image: url(images/<?php echo $v['hinhanh'] ?>)"></div>
                                         <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
+                                            <p class="name"><?php echo $v['hoten'] ?></p>
                                             <span class="position">Marketing Manager</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                                        <div class="pl-3">
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Marketing Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+        }
+        ?>
+<!-- -------------------------------------------------------------------------------------------------------- -->
+                       
                     </div>
                 </div>
             </div>
