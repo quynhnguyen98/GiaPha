@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Đây là trang web gia phả</title>
+  <title>Website-Gia Phả</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,8 +40,8 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread">Contact us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact us <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Thông Báo</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Trang Chủ<i class="ion-ios-arrow-forward"></i></a></span> <span>Thông Báo<i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
