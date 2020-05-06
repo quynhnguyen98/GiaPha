@@ -136,7 +136,7 @@
         <li class="nav-item"><a href="../gioithieu.php" class="nav-link">Giới Thiệu</a></li>
         <li class="nav-item"><a href="../hinhanh.php" class="nav-link">Hình Ảnh</a></li>
         <li class="nav-item"><a href="../tintuc.php" class="nav-link">Tin Tức</a></li>
-        <li class="nav-item"><a href="../thongbao.php" class="nav-link">Login/Registration</a></li>
+        <li class="nav-item"><a href="../thongbao.php" class="nav-link">Thông Báo</a></li>
     </ul>
 </div>
 </div>
