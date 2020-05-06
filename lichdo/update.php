@@ -3,8 +3,7 @@
 
 //update.php
 
-$connect = new PDO('mysql:host=localhost;dbname=testing', 'root', '');
-
+include "../config.php";
 if(isset($_POST["id"]))
 {
  $query = "

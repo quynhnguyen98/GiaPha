@@ -5,7 +5,6 @@ $result = $data->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
   <title>Đây là trang web gia phả</title>
@@ -15,12 +14,6 @@ $result = $data->fetchAll();
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-=======
-  <head>
-  <title>Website-Gia Phả</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
->>>>>>> 4dd12fed2059d2f3bbc00fa16d617da93a896bfd
 
   <link rel="stylesheet" href="css/animate.css">
 
@@ -44,7 +37,6 @@ $result = $data->fetchAll();
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <?php
-<<<<<<< HEAD
     include "minifile/head-footer/menu.php"
     ?>
   </nav>
@@ -57,21 +49,6 @@ $result = $data->fetchAll();
         <div class="col-md-9 ftco-animate pb-5 text-center">
           <h1 class="mb-3 bread">Blog</h1>
           <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
-=======
-     include "minifile/head-footer/menu.php"
-     ?>
-	  </nav>
-    <!-- END nav -->
-    
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-end justify-content-center">
-          <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread">Tin Tức</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Trang Chủ<i class="ion-ios-arrow-forward"></i></a></span> <span>Tin Tức<i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
->>>>>>> 4dd12fed2059d2f3bbc00fa16d617da93a896bfd
         </div>
       </div>
     </div>

@@ -2,8 +2,7 @@
 
 //load.php
 
-$connect = new PDO('mysql:host=localhost;dbname=testing', 'root', '');
-
+include "../config.php";
 $data = array();
 
 $query = "SELECT * FROM events ORDER BY id";

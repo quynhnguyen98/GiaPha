@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 06, 2020 lúc 04:54 PM
--- Phiên bản máy phục vụ: 10.4.11-MariaDB
--- Phiên bản PHP: 7.2.29
+-- Máy chủ: localhost
+-- Thời gian đã tạo: Th5 06, 2020 lúc 07:25 PM
+-- Phiên bản máy phục vụ: 10.4.8-MariaDB
+-- Phiên bản PHP: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -20,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `giapha`
 --
-CREATE DATABASE IF NOT EXISTS `giapha` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `giapha`;
 
 -- --------------------------------------------------------
 
@@ -69,6 +68,27 @@ INSERT INTO `dongho` (`dongho_id`, `hoten`, `tieusu`, `hinhanh`, `nguoithan_id`)
 (25, 'Newcastle', 'zxcvzxcvzxczxcvzxcvzxc\r\nzxcvzxcvzxczxcvzxcvzxc\r\nzxcvzxcvzxczxcvzxcvzxczxcvzxcvzxc\r\nzxcvzxcvzxc', '', 9),
 (26, 'City of Brisbane', '', '', 10),
 (27, 'Gold Coast', '', '', 10);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `events`
+--
+
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `start_event` datetime NOT NULL,
+  `end_event` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `events`
+--
+
+INSERT INTO `events` (`id`, `title`, `start_event`, `end_event`) VALUES
+(1, 'hvjvjh', '2020-05-05 00:00:00', '2020-05-06 00:00:00'),
+(2, 'gvjg', '2020-05-02 00:00:00', '2020-05-03 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -157,6 +177,12 @@ ALTER TABLE `dongho`
   ADD PRIMARY KEY (`dongho_id`);
 
 --
+-- Chỉ mục cho bảng `events`
+--
+ALTER TABLE `events`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `hinhanh`
 --
 ALTER TABLE `hinhanh`
@@ -183,6 +209,12 @@ ALTER TABLE `tintuc`
 --
 ALTER TABLE `dongho`
   MODIFY `dongho_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT cho bảng `events`
+--
+ALTER TABLE `events`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `hinhanh`
