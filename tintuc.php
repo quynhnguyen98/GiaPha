@@ -77,7 +77,7 @@ $result = $data->fetchAll();
                 </div>
                 <h3 class="heading mb-0"><a href="#"><?php echo $v['tieude'] ?></a></h3>
                 <p><?php echo $v['noidung'] ?></p>
-                <p><a href="#" class="btn btn-primary">Chi tiết</a></p>
+                <p><a href="chitiet.php?id=<?php echo $v['tintuc_id'] ?>" class="btn btn-primary">Chi tiết</a></p>
               </div>
             </div>
           </div>
