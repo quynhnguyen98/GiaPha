@@ -76,7 +76,7 @@ $result = $data->fetchAll();
                   </div>
                 </div>
                 <h3 class="heading mb-0"><a href="#"><?php echo $v['tieude'] ?></a></h3>
-                <p><?php echo $v['noidung'] ?></p>
+                <p id="cont"><?php echo $v['noidung'] ?></p>
                 <p><a href="chitiet.php?id=<?php echo $v['tintuc_id'] ?>" class="btn btn-primary">Chi tiết</a></p>
               </div>
             </div>
@@ -145,6 +145,19 @@ $result = $data->fetchAll();
 
     gtag('config', 'UA-23581568-13');
   </script>
+
+  <script>
+function trimSentence(str, sentenceCount){
+		var strArray = str.split('.');
+		var subArray = strArray.slice(0, sentenceCount);
+    var result = subArray.join(".");
+    return result + '...';
+}
+
+var str = $('#cont').text();
+var result = trimSentence(str, 1);
+$('#cont').text(result);
+</script>
 
 </body>
 
