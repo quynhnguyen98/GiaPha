@@ -172,7 +172,7 @@
         </div>
     </section>
 
-    <section class="ftco-intro bg-primary py-5">
+    <!-- <section class="ftco-intro bg-primary py-5">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6">
@@ -184,7 +184,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 

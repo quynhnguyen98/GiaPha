@@ -46,7 +46,7 @@ $result = $data->fetchAll();
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
             <h1 class="mb-3 bread">Hình Ảnh</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Trang Chủ<i class="ion-ios-arrow-forward"></i></a></span> <span>Hình Ảnh<i class="ion-ios-arrow-forward"></i></span></p>
+            <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Trang Chủ<i class="ion-ios-arrow-forward"></i></a></span> <span>Hình Ảnh<i class="ion-ios-arrow-forward"></i></span></p> -->
           </div>
         </div>
       </div>

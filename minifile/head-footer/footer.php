@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-8 py-4">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-6 ftco-animate d-flex align-items-center">
                         <h2 class="mb-0" style="color:white; font-size: 24px;">Subcribe to our Newsletter</h2>
                     </div>
@@ -14,7 +14,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
