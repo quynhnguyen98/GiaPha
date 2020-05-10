@@ -213,7 +213,7 @@ $kq=$data_dongho->fetchAll();
                                         <div class="user-img" style="background-image: url(images/<?php echo $v['hinhanh'] ?>)"></div>
                                         <div class="pl-3">
                                             <p class="name"><?php echo $v['hoten'] ?></p>
-                                            <span class="position">Marketing Manager</span>
+                                            <!-- <span class="position">Marketing Manager</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -234,74 +234,42 @@ $kq=$data_dongho->fetchAll();
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
-                    <span class="subheading">Our Blog</span>
-                    <h2>Recent Blog</h2>
+                    <span class="subheading">Tin Tức</span>
+                    <h2>Dòng Họ Nguyễn Đức</h2>
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.php" class="block-20" style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text p-4 float-right d-block">
-                            <div class="topper d-flex align-items-center">
-                                <div class="one py-2 pl-3 pr-1 align-self-stretch">
-                                    <span class="day">24</span>
-                                </div>
-                                <div class="two pl-0 pr-3 py-2 align-self-stretch">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">January</span>
-                                </div>
-                            </div>
-                            <h3 class="heading mb-0"><a href="#">All you want to know about industrial laws</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
-                    </div>
+            <?php
+            
+            include "config.php";
+            $data = $connect->query('select * from tintuc');
+            $result = $data->fetchAll();
+        foreach ($result as $k => $v) {
+        ?>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.php" class="block-20" style="background-image: url('images/<?php echo $v['hinhanh'] ?>');">
+              </a>
+              <div class="text p-4 float-right d-block">
+                <div class="topper d-flex align-items-center">
+                  <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                    <span class="day"></span>
+                  </div>
+                  <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                    <span class="yr"><?php echo $v['ngaythang'] ?></span>
+                    <span class="mos">Năm/Tháng/Ngày</span>
+                  </div>
                 </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.php" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text p-4 float-right d-block">
-                            <div class="topper d-flex align-items-center">
-                                <div class="one py-2 pl-3 pr-1 align-self-stretch">
-                                    <span class="day">24</span>
-                                </div>
-                                <div class="two pl-0 pr-3 py-2 align-self-stretch">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">January</span>
-                                </div>
-                            </div>
-                            <h3 class="heading mb-0"><a href="#">All you want to know about industrial laws</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.php" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text p-4 float-right d-block">
-                            <div class="topper d-flex align-items-center">
-                                <div class="one py-2 pl-3 pr-1 align-self-stretch">
-                                    <span class="day">24</span>
-                                </div>
-                                <div class="two pl-0 pr-3 py-2 align-self-stretch">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">January</span>
-                                </div>
-                            </div>
-                            <h3 class="heading mb-0"><a href="#">All you want to know about industrial laws</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="heading mb-0"><a href="#"><?php echo $v['tieude'] ?></a></h3>
+                <p id="cont"><?php echo $v['noidung'] ?></p>
+                <p><a href="chitiet.php?id=<?php echo $v['tintuc_id'] ?>" class="btn btn-primary">Chi tiết</a></p>
+              </div>
+            </div>
+          </div>
+
+        <?php
+        }
+        ?>
             </div>
         </div>
     </section>
