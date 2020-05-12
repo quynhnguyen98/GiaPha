@@ -46,16 +46,7 @@
       {
        var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
        var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
-       $.ajax({
-        url:"insert.php",
-        type:"POST",
-        data:{title:title, start:start, end:end},
-        success:function()
-        {
-         calendar.fullCalendar('refetchEvents');
-         alert("Thêm thành công");
-        }
-       })
+       
       }
      },
      editable:true,
@@ -65,15 +56,7 @@
       var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
       var title = event.title;
       var id = event.id;
-      $.ajax({
-       url:"update.php",
-       type:"POST",
-       data:{title:title, start:start, end:end, id:id},
-       success:function(){
-        calendar.fullCalendar('refetchEvents');
-        alert('Cập nhật lại thành công');
-       }
-      })
+     
      },
  
      eventDrop:function(event)
@@ -82,16 +65,7 @@
       var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
       var title = event.title;
       var id = event.id;
-      $.ajax({
-       url:"update.php",
-       type:"POST",
-       data:{title:title, start:start, end:end, id:id},
-       success:function()
-       {
-        calendar.fullCalendar('refetchEvents');
-        alert("Cập nhật lại thành công");
-       }
-      });
+    
      },
  
      eventClick:function(event)
@@ -99,16 +73,7 @@
       if(confirm("Có chắc là xoá sự kiện này"))
       {
        var id = event.id;
-       $.ajax({
-        url:"delete.php",
-        type:"POST",
-        data:{id:id},
-        success:function()
-        {
-         calendar.fullCalendar('refetchEvents');
-         alert("Đã Xoá !!");
-        }
-       })
+      
       }
      },
  
