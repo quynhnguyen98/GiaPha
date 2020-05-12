@@ -60,14 +60,14 @@ $result = $data->fetchAll();
         foreach ($result as $k => $v) {
         ?>
           <div class="col-md-4 ftco-animate">
-            <div class="gallery img d-flex align-items-end" style="background-image: url(images/<?php echo $v['hinhanh'] ?>);">
-            	<a href="images/<?php echo $v['hinhanh'] ?>" class="icon image-popup d-flex justify-content-center align-items-center">
+            <div class="gallery img d-flex align-items-end" style="background-image: url(images/<?php echo $v['image_name'] ?>);">
+            	<a href="images/<?php echo $v['image_name'] ?>" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
             	<div class="desc w-100 px-4">
 	              <div class="text w-100 mb-3">
 	              	<span><?php echo $v['ngaythang'] ?></span>
-	              	<h2><a href="work-single.php"><?php echo $v['tensukien'] ?></a></h2>
+	              	<h2><a href="work-single.php"><?php echo $v['image_description'] ?></a></h2>
 	              </div>
               </div>
             </div>
