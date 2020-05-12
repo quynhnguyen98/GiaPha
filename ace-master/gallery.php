@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Gallery - Ace Admin</title>
+		<title>Gia Phả</title>
 
 		<meta name="description" content="responsive photo gallery using colorbox" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -391,9 +391,9 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
+								<a href="index.php">Home</a>
 							</li>
-							<li class="active">Gallery</li>
+							<li class="active">Hình Ảnh</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -476,41 +476,48 @@
 
 						<div class="page-header">
 							<h1>
-								Gallery
+							Hình Ảnh
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									responsive photo gallery using colorbox
+									
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
 
 						<div class="row">
+						<?php
+                                           include "../config.php";
+                                            $data = $$connect->query("select * from hinhanh limit 0,20 ");
+                                            $product = $data->fetchAll(PDO::FETCH_OBJ);
+                                            //print_r($product);
+                                            foreach ($product as $key => $r) 
+                                            {?>
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div>
 									<ul class="ace-thumbnails clearfix">
 										<li>
 											<a href="assets/images/gallery/image-1.jpg" title="Photo Title" data-rel="colorbox">
-												<img width="150" height="150" alt="150x150" src="assets/images/gallery/thumb-1.jpg" />
+												<img width="150" height="150" alt="150x150" src="<?php echo $r->image;?>" />
 											</a>
+<!-- 
+												<div class="tags">
+													<span class="label-holder">
+														<span class="label label-info">breakfast</span>
+													</span>
 
-											<div class="tags">
-												<span class="label-holder">
-													<span class="label label-info">breakfast</span>
-												</span>
+													<span class="label-holder">
+														<span class="label label-danger">fruits</span>
+													</span>
 
-												<span class="label-holder">
-													<span class="label label-danger">fruits</span>
-												</span>
+													<span class="label-holder">
+														<span class="label label-success">toast</span>
+													</span>
 
-												<span class="label-holder">
-													<span class="label label-success">toast</span>
-												</span>
-
-												<span class="label-holder">
-													<span class="label label-warning arrowed-in">diet</span>
-												</span>
-											</div>
+													<span class="label-holder">
+														<span class="label label-warning arrowed-in">diet</span>
+													</span>
+												</div> -->
 
 											<div class="tools">
 												<a href="#">
@@ -531,7 +538,7 @@
 											</div>
 										</li>
 
-										<li>
+										<!-- <li>
 											<a href="assets/images/gallery/image-2.jpg" data-rel="colorbox">
 												<img width="150" height="150" alt="150x150" src="assets/images/gallery/thumb-2.jpg" />
 												<div class="text">
@@ -694,10 +701,13 @@
 													<i class="ace-icon fa fa-times red"></i>
 												</a>
 											</div>
-										</li>
+										</li> -->
 									</ul>
 								</div><!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
+							<?php
+                                             }
+                                             ?>
 						</div><!-- /.row -->
 					</div><!-- /.page-content -->
 				</div>

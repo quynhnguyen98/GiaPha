@@ -42,7 +42,7 @@
         <a href="#" class="dropdown-toggle">
             <i class="menu-icon fa fa-desktop"></i>
             <span class="menu-text">
-            cây gia phả
+            Cây Gia Phả
             </span>
 
             <b class="arrow fa fa-angle-down"></b>
@@ -125,7 +125,7 @@
     <li class="">
         <a href="gallery.php">
             <i class="menu-icon fa fa-picture-o"></i>
-            <span class="menu-text"> Gallery </span>
+            <span class="menu-text"> Hình Ảnh </span>
         </a>
 
         <b class="arrow"></b>
