@@ -94,7 +94,7 @@ $result_plus = $data_plus->fetchAll();
                             <img src="images/<?php echo $v['hinhanh'] ?>" alt="Image placeholder" class="img-fluid mb-4">
                         </div>
                         <div class="desc">
-                            <h3><?php echo $v['tieude'] ?></h3>
+                            <h3><a href="#"><?php echo $v['tieude'] ?></h3>
                             <p><?php echo $v['noidung'] ?></p>
                         </div>
                         <?php
