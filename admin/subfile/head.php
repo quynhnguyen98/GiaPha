@@ -43,7 +43,7 @@
                     <li class="divider"></li>
 
                     <li>
-                        <a href="#">
+                        <a href="../admin/logout.php">
                             <i class="ace-icon fa fa-power-off"></i>
                             Logout
                         </a>

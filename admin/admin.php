@@ -1,23 +1,6 @@
 <?php
 if (!isset($_SESSION)) session_start();
-include "config.php";
-if(isset($_POST['login']) )
-{
-    $name=$_POST['username'];
-    $pass=$_POST['password'];
-    $data = $obj->query("select * from admin where username='$name' and password='$pass'");
-    $r=$data->fetch();
-    $count=$data->rowCount();
-    if($count=="1")
-    {
-        $_SESSION["username"]=$r['hoTen'];
-        header('location: admin/index.php');
-    }
-    else{
-       echo"Login Fail";
-    }
-   
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,19 +14,19 @@ if(isset($_POST['login']) )
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <!-- bootstrap & fontawesome -->
-    <link rel="stylesheet" href="admin/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="admin/assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 
     <!-- text fonts -->
-    <link rel="stylesheet" href="admin/assets/css/fonts.googleapis.com.css" />
+    <link rel="stylesheet" href=" assets/css/fonts.googleapis.com.css" />
 
     <!-- ace styles -->
-    <link rel="stylesheet" href="admin/assets/css/ace.min.css" />
+    <link rel="stylesheet" href=" assets/css/ace.min.css" />
 
     <!--[if lte IE 9]>
 			<link rel="stylesheet" href="assets/css/ace-part2.min.css" />
 		<![endif]-->
-    <link rel="stylesheet" href="admin/assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href=" assets/css/ace-rtl.min.css" />
 
 </head>
 
@@ -71,13 +54,14 @@ if(isset($_POST['login']) )
                                             Please Enter Your Information
                                         </h4>
 
+                                        <div id="loi-login"></div>
                                         <div class="space-6"></div>
 
-                                        <form action="admin/index.php" method="POST">
+                                        <form action="" method="post">
                                             <fieldset>
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="text" class="form-control" name="username" required=""
+                                                        <input type="text" class="form-control" id="txtName" name="username" required=""
                                                             placeholder="Username" />
                                                         <i class="ace-icon fa fa-user"></i>
                                                     </span>
@@ -85,7 +69,7 @@ if(isset($_POST['login']) )
 
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="password" class="form-control" name="password" required=""
+                                                        <input type="password" class="form-control" id="txtPassword" name="password" required=""
                                                             placeholder="Password" />
                                                         <i class="ace-icon fa fa-lock"></i>
                                                     </span>
@@ -99,10 +83,10 @@ if(isset($_POST['login']) )
                                                         <span class="lbl"> Remember Me</span>
                                                     </label>
 
-                                                    <a type="button" href="admin/index.php"
+                                                    <a type="button"
                                                         class="width-35 pull-right btn btn-sm btn-primary">
                                                         <i class="ace-icon fa fa-key"></i>
-                                                        <span class="bigger-110" type="submit" name="login" value="Login">Login</span>
+                                                        <span class="bigger-110" id="login" name="login">Login</span>
                                                     </a>
                                                     
                                                 </div>
@@ -262,7 +246,8 @@ if(isset($_POST['login']) )
 
     <!--[if !IE]> -->
     <script src="assets/js/jquery-2.1.4.min.js"></script>
-
+     <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/login.js"?time=<?=time();?>></script>
     <!-- <![endif]-->
 
     <!--[if IE]>
