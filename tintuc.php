@@ -6,27 +6,10 @@ $result = $data->fetchAll();
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Đây là trang web gia phả</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+    include "minifile/header.php";
+ ?>
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="css/animate.css">
-
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
-  <link rel="stylesheet" href="css/ionicons.min.css">
-
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
 
 <body>
 
@@ -55,9 +38,22 @@ $result = $data->fetchAll();
   </section>
 
   <section class="ftco-section bg-light">
-    <div class="container">
+        
+
+        <div class="container">
+          <?php
+            include "minifile/divsearch.php";
+          ?>
+        </div>
+      
+        </section>
+ 
+  <section class="ftco-section bg-light">
+    <div class="container" id="an">
+   
+ 
       <div class="row d-flex">
-<!------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
         <?php
         foreach ($result as $k => $v) {
         ?>
@@ -86,7 +82,7 @@ $result = $data->fetchAll();
         }
         ?>
 <!------------------------------------------------------------------------------------------------------------------------------->
-      </div>
+      </div> 
       <div class="row mt-5">
         <div class="col text-center">
           <div class="block-27">

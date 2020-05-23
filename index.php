@@ -7,34 +7,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-<title>Website-Gia Phả</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
+<?php
+    include "minifile/header.php";
+ ?>
 
 <body>
 
     <div class="container pt-5 pb-4">
         <?php
-        include "minifile/head-footer/head.php"
+        include "minifile/head-footer/head.php";
         ?>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -61,38 +42,15 @@
         </div>
     </div>
 
-    <section class="ftco-section ftco-no-pt">
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-3 py-5 order-md-last">
-                    <div class="heading-section ftco-animate">
-                        <span class="subheading">Services</span>
-                        <h2 class="mb-4">Lawn Services</h2>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                            It is a paradisematic country, in which roasted parts of sentences fly into your.</p>
-                        <p><a href="#" class="btn btn-primary py-3 px-4">Get a Quote</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-9 services-wrap px-4 pt-5">
-                    <div class="row pt-md-3">
-                        <div class="col-md-4 d-flex align-items-stretch">
-                            <div class="services text-center">
-                                <div class="icon d-flex justify-content-center align-items-center">
-                                    <span class="flaticon-fence"></span>
-                                </div>
-                                <div class="text">
-                                    <h3></h3>
-                                    <p></p>
-                                </div>
-                                <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
-                                        class="ion-ios-arrow-round-forward"></span></a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div> -->
+   <section class="ftco-section bg-light">
+        
+
+    <div class="container">
+      <?php
+        include "minifile/divsearch.php";
+      ?>
+    </div>
+  
     </section>
 
     <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
